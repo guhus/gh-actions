@@ -66,7 +66,7 @@ git_add() {
     if [ "$(git status --porcelain | grep "$file" | grep -c -E '([MA]\W).+')" -eq 1 ]; then
         echo "::debug Added ${file} to git staging area"
     else
-        echo "::debug No change detectedz"
+        echo "::debug No change in ${file} detectedsss"
     fi
 }
 
@@ -188,5 +188,5 @@ else
         exit 1
     fi
 fi
-echo "Adding my stuff here.."
+echo "Adding my stuff"
 exit 0
