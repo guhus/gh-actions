@@ -66,7 +66,7 @@ git_add() {
     if [ "$(git status --porcelain | grep "$file" | grep -c -E '([MA]\W).+')" -eq 1 ]; then
         echo "::debug Added ${file} to git staging area"
     else
-        echo "::debug No change in ${file} detected"
+        echo "::debug No change in ${file} detectedsss"
     fi
 }
 
@@ -76,7 +76,7 @@ git_status() {
 
 git_commit() {
     if [ "$(git_status)" -eq 0 ]; then
-        echo "::debug:: No files changed, skipping commitsss"
+        echo "::debug No files changed, skipping commit"
         exit 0
     fi
 
