@@ -76,7 +76,7 @@ git_status() {
 
 git_commit() {
     if [ "$(git_status)" -eq 0 ]; then
-        echo "::debug:: No files changed, skipping commit"
+        echo "::debug:: No files changed, skipping commitsss"
         exit 0
     fi
 
